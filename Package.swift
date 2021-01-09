@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "YoutubePlayer_in_WKWebview",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v13),
     ],
@@ -16,7 +17,11 @@ let package = Package(
         .target(
             name: "YoutubePlayer_in_WKWebview",
             dependencies: [],
-            path: "WKYTPlayerView/"),
+            path: ".",
+            sources: ["WKYTPlayerView"],
+            //resources: [.process("WKYTPlayerView/WKYTPlayerView.bundle")],
+            publicHeadersPath: "WKYTPlayerView"
+            )
     ],
     swiftLanguageVersions: [.v5]
 )
