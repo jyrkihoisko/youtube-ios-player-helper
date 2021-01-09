@@ -17,7 +17,9 @@ let package = Package(
             name: "YoutubePlayer_in_WKWebview",
             dependencies: [],
             path: "WKYTPlayerView/",
-            resources: [.copy("WKYTPlayerView.bundle")])
+            publicHeadersPath: "WKYTPlayerView",
+            resources: [.copy("WKYTPlayerView.bundle")]
+            )
     ],
     swiftLanguageVersions: [.v5]
 )
