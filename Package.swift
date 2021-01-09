@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "YoutubePlayer_in_WKWebview",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v13),
     ],
