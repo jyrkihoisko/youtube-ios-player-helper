@@ -16,7 +16,8 @@ let package = Package(
         .target(
             name: "YoutubePlayer_in_WKWebview",
             dependencies: [],
-            path: "WKYTPlayerView/",
+            path: ".",
+            sources: "WKYTPlayerView",
             resources: [.copy("WKYTPlayerView.bundle")],
             publicHeadersPath: "WKYTPlayerView"
             )
