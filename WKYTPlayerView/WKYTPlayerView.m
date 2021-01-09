@@ -950,6 +950,17 @@ NSString static *const kWKYTPlayerSyndicationRegexPattern = @"^https://tpc.googl
                                                    inDirectory:@"Assets"];
     }
     
+
+#if SWIFT_PACKAGE
+    if (!path) {
+        //        UIImage *image = [UIImage imageNamed:@"ImageName" inBundle:SWIFTPM_MODULE_BUNDLE withConfiguration:nil];
+        
+        path = [SWIFTPM_MODULE_BUNDLE pathForResource:@"YTPlayerView-iframe-player"
+                                                ofType:@"html"
+                                            inDirectory:@"Assets"];
+    }    
+#endif
+    
     NSString *embedHTMLTemplate =
     [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     
