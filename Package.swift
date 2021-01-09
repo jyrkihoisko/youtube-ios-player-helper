@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "YouTubeiOSPlayerHelper",
+    name: "YoutubePlayer_in_WKWebview",
     platforms: [
         .iOS(.v13),
     ],
     products: [
         .library(
-            name: "YouTubeiOSPlayerHelper",
-            targets: ["YouTubeiOSPlayerHelper"]),
+            name: "YoutubePlayer_in_WKWebview",
+            targets: ["YoutubePlayer_in_WKWebview"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "YouTubeiOSPlayerHelper",
+            name: "YoutubePlayer_in_WKWebview",
             dependencies: [],
-            path: "WKYTPlayerView"),
+            path: "WKYTPlayerView/"),
     ],
     swiftLanguageVersions: [.v5]
 )
