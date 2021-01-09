@@ -19,7 +19,7 @@ let package = Package(
             dependencies: [],
             path: ".",
             sources: ["WKYTPlayerView"],
-            //resources: [.copy("WKYTPlayerView/WKYTPlayerView.bundle")],
+            resources: [.process("WKYTPlayerView/WKYTPlayerView.bundle")],
             publicHeadersPath: "WKYTPlayerView"
             )
     ],
