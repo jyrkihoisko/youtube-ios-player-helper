@@ -15,9 +15,9 @@ let package = Package(
     targets: [
         .target(
             name: "YoutubePlayer_in_WKWebview",
-            dependencies: [],
+            dependencies: ["objc"],
             path: "WKYTPlayerView/"),
-            resources: [.process("WKYTPlayerView.bundle")]
+            resources: [.copy("WKYTPlayerView/WKYTPlayerView.bundle")]
     ],
     swiftLanguageVersions: [.v5]
 )
