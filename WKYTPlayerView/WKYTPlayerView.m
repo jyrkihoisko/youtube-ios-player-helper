@@ -956,8 +956,7 @@ NSString static *const kWKYTPlayerSyndicationRegexPattern = @"^https://tpc.googl
         //        UIImage *image = [UIImage imageNamed:@"ImageName" inBundle:SWIFTPM_MODULE_BUNDLE withConfiguration:nil];
         
         path = [SWIFTPM_MODULE_BUNDLE pathForResource:@"YTPlayerView-iframe-player"
-                                                ofType:@"html"
-                                            inDirectory:@"Assets"];
+                                                ofType:@"html"];
     }    
 #endif
     
